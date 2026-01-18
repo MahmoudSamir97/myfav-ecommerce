@@ -1,5 +1,9 @@
+import * as React from 'react';
+import { Slot } from '@radix-ui/react-slot';
 import { cva, type VariantProps } from 'class-variance-authority';
+import { cn } from '@/shared/lib/utils';
 
+/* eslint-disable react-refresh/only-export-components */
 export const buttonVariants = cva('inline-flex items-center justify-center gap-2 ...', {
   variants: {
     variant: {
@@ -25,4 +29,27 @@ export const buttonVariants = cva('inline-flex items-center justify-center gap-2
   },
 });
 
-export type ButtonVariants = VariantProps<typeof buttonVariants>;
+function Button({
+  className,
+  variant = 'default',
+  size = 'default',
+  asChild = false,
+  ...props
+}: React.ComponentProps<'button'> &
+  VariantProps<typeof buttonVariants> & {
+    asChild?: boolean;
+  }) {
+  const Comp = asChild ? Slot : 'button';
+
+  return (
+    <Comp
+      data-slot="button"
+      data-variant={variant}
+      data-size={size}
+      className={cn(buttonVariants({ variant, size, className }))}
+      {...props}
+    />
+  );
+}
+
+export { Button };

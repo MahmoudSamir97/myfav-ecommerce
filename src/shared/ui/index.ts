@@ -1,2 +1,2 @@
-export { Button } from '@/shared/ui/button/button';
+export { Button } from './button';
 export { Toaster } from './sonner';
