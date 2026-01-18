@@ -9,4 +9,5 @@ export type ThemeProviderProps = {
 export type ThemeProviderState = {
   theme: Theme;
   setTheme: (theme: Theme) => void;
+  toggle: () => void;
 };
