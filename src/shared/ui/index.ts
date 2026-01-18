@@ -1,2 +1,3 @@
-export { Button } from './button';
-export { Toaster } from './sonner';
+export { Button } from './Button';
+export { Toaster } from './Sonner';
+export { ThemeToggle } from './ThemeToggle';
