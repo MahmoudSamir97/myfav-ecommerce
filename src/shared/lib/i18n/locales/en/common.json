@@ -1,1 +1,8 @@
-{ "welcome": "Welcome..........", "logout": "Log out" }
+{
+  "announcement": {
+    "text": "30% off storewide — Limited time!",
+    "button": "Shop Now"
+  },
+  "welcome": "Welcome..........",
+  "logout": "Log out"
+}
