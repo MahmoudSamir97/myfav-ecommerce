@@ -1,0 +1,73 @@
+@import 'tailwindcss';
+@import './tokens.css';
+@import './themes.css';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  /* Typography */
+  --font-sans: var(--ff-primary);
+  --font-weight-medium: var(--fw-medium);
+  --font-weight-semibold: var(--fw-semibold);
+
+  --text-hero: var(--fs-hero);
+  --text-h1: var(--fs-h1);
+  --text-h2: var(--fs-h2);
+  --text-body-base: var(--fs-body-base);
+
+  --color-announcement: var(--text-announcement);
+
+  --color-background: var(--background);
+  --color-surface-soft: var(--surface-soft);
+  --color-foreground: var(--foreground);
+
+  /* Semantic Text Colors */
+  --color-heading-hero: var(--text-hero);
+  --color-heading-title: var(--text-title);
+  --color-text-announcement: var(--text-announcement);
+
+  --color-primary: var(--primary);
+  --color-border: var(--border);
+
+  /* Link Color */
+  --color-link: var(--accent);
+
+  /* Color System - Mapped to Themes */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+
+  /* Utility Colors (Brands) */
+  --color-brand-blue: var(--blue-500);
+  --color-brand-green: var(--green-500);
+  --color-brand-orange: var(--orange-500);
+  --color-brand-red: var(--red-500);
+}
+
+@layer base {
+  html {
+    font-family: var(--ff-primary);
+    transition:
+      background-color 0.2s ease-in-out,
+      color 0.2s ease-in-out;
+  }
+
+  h1,
+  .hero {
+    color: var(--text-hero);
+  }
+  h2,
+  h3,
+  article h4 {
+    color: var(--text-title);
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
