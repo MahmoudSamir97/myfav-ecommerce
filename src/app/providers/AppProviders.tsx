@@ -4,6 +4,7 @@ import i18n from './i18n/instance';
 import { ThemeProvider } from '@/app/providers';
 import { Toaster } from '@/shared/ui';
 import { QueryProvider } from '@/app/providers/query-client/QueryProvider';
+import { StoreProvider } from '@/app/providers/store/StoreProvider';
 
 interface Props {
   children: ReactNode;
@@ -12,10 +13,12 @@ interface Props {
 export function AppProviders({ children }: Props) {
   return (
     <I18nextProvider i18n={i18n}>
-      <ThemeProvider>
-        <Toaster />
-        <QueryProvider>{children}</QueryProvider>
-      </ThemeProvider>
+      <StoreProvider>
+        <ThemeProvider>
+          <Toaster />
+          <QueryProvider>{children}</QueryProvider>
+        </ThemeProvider>
+      </StoreProvider>
     </I18nextProvider>
   );
 }

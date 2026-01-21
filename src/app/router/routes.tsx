@@ -1,7 +1,8 @@
+import { BaseLayout } from '@/app/layouts';
 import { lazy } from 'react';
 import type { RouteObject } from 'react-router-dom';
 
-// const HomePage = lazy(() => import('@/pages/home/page'));
+const HomePage = lazy(() => import('@/pages/home/page'));
 // const LoginPage = lazy(() => import('@/pages/auth/login/page'));
 // const DashboardPage = lazy(() => import('@/pages/dashboard/page'));
 // const ProductPage = lazy(() => import('@/pages/product/page'));
@@ -9,17 +10,17 @@ import type { RouteObject } from 'react-router-dom';
 const NotFoundPage = lazy(() => import('@/pages/not-found/page'));
 
 export const routes: RouteObject[] = [
-  // {
-  //   element: <MainLayout />,
-  //   children: [
-  //     { index: true, element: <HomePage /> },
+  {
+    element: <BaseLayout />,
+    children: [
+      { index: true, element: <HomePage /> },
 
-  //     {
-  //       element: <AuthGuard />,
-  //       children: [{ path: 'dashboard', element: <DashboardPage /> }],
-  //     },
-  //   ],
-  // },
+      // {
+      //   element: <AuthGuard />,
+      //   children: [{ path: 'dashboard', element: <DashboardPage /> }],
+      // },
+    ],
+  },
   // {
   //   element: <AuthLayout />,
   //   children: [
