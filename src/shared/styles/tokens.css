@@ -1,6 +1,6 @@
 :root {
   /* --- Typography Families --- */
-  --ff-primary: 'Poppins', system-ui, -apple-system, sans-serif;
+  --ff-primary: 'Poppins', 'Cairo', sans-serif;
 
   /* --- Typography Weights --- */
   --fw-regular: 400;
