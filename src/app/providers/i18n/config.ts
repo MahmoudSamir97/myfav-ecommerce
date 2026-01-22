@@ -6,4 +6,10 @@ export const i18nConfig = {
   interpolation: {
     escapeValue: false,
   },
+  detection: {
+    order: ['localStorage', 'querystring'],
+    lookupLocalStorage: 'lang',
+    caches: ['localStorage'],
+    excludeCacheFor: ['querystring'],
+  },
 };
