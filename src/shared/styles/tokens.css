@@ -1,114 +1,51 @@
 :root {
-  /* ===============================
-       SURFACE & TEXT SYSTEM
-       =============================== */
+  /* --- Typography Families --- */
+  --ff-primary: 'Poppins', 'Cairo', sans-serif;
 
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  /* --- Typography Weights --- */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
 
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
+  /* --- Typography Scale (rem) --- */
+  --fs-hero: 6rem;
+  --fs-h1: 5rem;
+  --fs-h2: 4.5rem;
+  --fs-h3: 3.375rem;
+  --fs-h4: 2.5rem;
+  --fs-h5: 2rem;
+  --fs-h6: 1.5rem;
+  --fs-h7: 1.125rem;
 
-  --border: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
+  /* --- Body Scale --- */
+  --fs-body-xl: 1.625rem;
+  --fs-body-lg: 1.375rem;
+  --fs-body-md: 1.25rem;
+  --fs-body-base: 1.125rem;
+  --fs-body-sm: 1rem;
+  --fs-body-xs: 0.875rem;
+  --fs-body-tiny: 0.75rem;
 
-  /* ===============================
-       PRIMARY
-       =============================== */
+  /* --- Line Heights --- */
+  --lh-hero: 1;
+  --lh-tight: 1.2;
+  --lh-normal: 1.5;
 
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
+  /* --- Raw Color Palette (The "Source") --- */
+  --raw-black: #000000;
+  --raw-white: #fefefe;
 
-  --primary-hover: 37 99 235;
-  --primary-hover-foreground: 255 255 255;
+  --blue-500: #377dff;
+  --green-500: #38cb89;
+  --orange-500: #ffab00;
+  --red-500: #ff5630;
 
-  --primary-active: 29 78 216;
-  --primary-active-foreground: 255 255 255;
-
-  --primary-border: 59 130 246;
-  --primary-ring: 59 130 246;
-
-  --primary-disabled: 147 197 253;
-  --primary-disabled-foreground: 239 246 255;
-
-  /* ===============================
-       SECONDARY
-       =============================== */
-
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-
-  --secondary-hover: 229 231 235;
-  --secondary-hover-foreground: 17 24 39;
-
-  --secondary-active: 209 213 219;
-  --secondary-active-foreground: 17 24 39;
-
-  --secondary-border: 229 231 235;
-  --secondary-ring: 156 163 175;
-
-  /* ===============================
-       DESTRUCTIVE
-       =============================== */
-
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: 255 255 255;
-
-  --destructive-hover: 185 28 28;
-  --destructive-hover-foreground: 255 255 255;
-
-  --destructive-active: 153 27 27;
-  --destructive-active-foreground: 255 255 255;
-
-  --destructive-border: 220 38 38;
-  --destructive-ring: 220 38 38;
-
-  /* ===============================
-       GHOST
-       =============================== */
-
-  --ghost: transparent;
-  --ghost-foreground: 17 24 39;
-
-  --ghost-hover: 243 244 246;
-  --ghost-hover-foreground: 17 24 39;
-
-  --ghost-active: 229 231 235;
-
-  /* ===============================
-       INPUTS
-       =============================== */
-
-  --input: oklch(0.922 0 0);
-  --input-foreground: 17 24 39;
-  --input-border: 209 213 219;
-  --input-focus: 59 130 246;
-
-  /* ===============================
-       STATES
-       =============================== */
-
-  --success: 34 197 94;
-  --warning: 234 179 8;
-  --info: 59 130 246;
-  --radius: 0.625rem;
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --neutral-100: #fefefe;
+  --neutral-200: #f3f5f7;
+  --neutral-300: #e8ecef;
+  --neutral-400: #6c7275;
+  --neutral-500: #343839;
+  --neutral-600: #232627;
+  --neutral-700: #141718;
 }

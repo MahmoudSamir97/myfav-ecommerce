@@ -1,9 +1,9 @@
 import type { ReactNode } from 'react';
-import { I18nextProvider } from 'react-i18next';
-import i18n from './i18n/instance';
 import { ThemeProvider } from '@/app/providers';
 import { Toaster } from '@/shared/ui';
 import { QueryProvider } from '@/app/providers/query-client/QueryProvider';
+import { StoreProvider } from '@/app/providers/store/StoreProvider';
+import { LanguageProvider } from '@/app/providers/i18n/LanguageProvider';
 
 interface Props {
   children: ReactNode;
@@ -11,11 +11,13 @@ interface Props {
 
 export function AppProviders({ children }: Props) {
   return (
-    <I18nextProvider i18n={i18n}>
-      <ThemeProvider>
-        <Toaster />
-        <QueryProvider>{children}</QueryProvider>
-      </ThemeProvider>
-    </I18nextProvider>
+    <LanguageProvider>
+      <StoreProvider>
+        <ThemeProvider>
+          <Toaster />
+          <QueryProvider>{children}</QueryProvider>
+        </ThemeProvider>
+      </StoreProvider>
+    </LanguageProvider>
   );
 }

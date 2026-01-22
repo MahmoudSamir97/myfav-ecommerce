@@ -12,8 +12,8 @@
   },
   "iconLibrary": "lucide",
   "aliases": {
-    "components": "@/components",
-    "ui": "@/shared/ui",
+    "components": "@/shared/ui/components",
+    "ui": "@/shared/ui/shadcn",
     "utils": "@/shared/lib/utils",
     "lib": "@/shared/lib",
     "hooks": "@/shared/hooks"

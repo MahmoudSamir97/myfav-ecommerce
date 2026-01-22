@@ -1,1 +1,13 @@
-{ "welcome": "Welcome..........", "logout": "Log out" }
+{
+  "announcement": {
+    "text": "30% off storewide — Limited time!",
+    "button": "Shop Now"
+  },
+  "languages": {
+    "arabic": "Arabic",
+    "english": "English"
+  },
+  "themes": {
+    "label": "Toggle Mode"
+  }
+}
