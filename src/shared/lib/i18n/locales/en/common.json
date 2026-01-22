@@ -3,6 +3,11 @@
     "text": "30% off storewide — Limited time!",
     "button": "Shop Now"
   },
-  "welcome": "Welcome..........",
-  "logout": "Log out"
+  "languages": {
+    "arabic": "Arabic",
+    "english": "English"
+  },
+  "themes": {
+    "label": "Toggle Mode"
+  }
 }
