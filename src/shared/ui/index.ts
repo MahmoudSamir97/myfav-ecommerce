@@ -28,7 +28,6 @@ export {
   NavigationMenuLink,
   NavigationMenuIndicator,
   NavigationMenuViewport,
-  navigationMenuTriggerStyle,
 } from './shadcn/navigation-menu.tsx';
 export {
   DropdownMenu,
