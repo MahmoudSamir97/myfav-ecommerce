@@ -1,12 +1,11 @@
-import { BaseLayout } from '@/app/layouts';
 import { lazy } from 'react';
 import type { RouteObject } from 'react-router-dom';
+import { BaseLayout } from '@/app/layouts';
 
 const HomePage = lazy(() => import('@/pages/home/page'));
-// const LoginPage = lazy(() => import('@/pages/auth/login/page'));
-// const DashboardPage = lazy(() => import('@/pages/dashboard/page'));
-// const ProductPage = lazy(() => import('@/pages/product/page'));
-// const CartPage = lazy(() => import('@/pages/cart/page'));
+const ProductsPage = lazy(() => import('@/pages/products/page'));
+const ContactUsPage = lazy(() => import('@/pages/contact-us/page'));
+const ShopPage = lazy(() => import('@/pages/shop/page'));
 const NotFoundPage = lazy(() => import('@/pages/not-found/page'));
 
 export const routes: RouteObject[] = [
@@ -14,22 +13,11 @@ export const routes: RouteObject[] = [
     element: <BaseLayout />,
     children: [
       { index: true, element: <HomePage /> },
-
-      // {
-      //   element: <AuthGuard />,
-      //   children: [{ path: 'dashboard', element: <DashboardPage /> }],
-      // },
+      { path: 'products', element: <ProductsPage /> },
+      { path: 'contact-us', element: <ContactUsPage /> },
+      { path: 'shop', element: <ShopPage /> },
     ],
   },
-  // {
-  //   element: <AuthLayout />,
-  //   children: [
-  //     {
-  //       element: <GuestGuard />,
-  //       children: [{ path: 'login', element: <LoginPage /> }],
-  //     },
-  //   ],
-  // },
   {
     path: '*',
     element: <NotFoundPage />,

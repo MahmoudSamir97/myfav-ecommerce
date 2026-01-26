@@ -23,10 +23,10 @@ export const LanguageSwitcher = ({ languages, value, onChange }: LanguageSwitche
         className={cn(
           'h-8 w-18 gap-1 px-2',
           'border-none shadow-none cursor-pointer',
-          'hover:bg-accent hover:text-accent-foreground'
+          'hover:text-accent-foreground'
         )}
       >
-        <GlobeIcon size={16} aria-hidden />
+        <GlobeIcon size={20} aria-hidden className="" stroke="currentColor" />
         <SelectValue />
       </SelectTrigger>
 

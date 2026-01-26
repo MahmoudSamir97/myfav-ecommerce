@@ -8,6 +8,7 @@ export const buttonVariants = cva('inline-flex items-center justify-center gap-2
   variants: {
     variant: {
       default: 'bg-primary text-primary-foreground hover:bg-primary/90',
+      nav: 'bg-transparent hover:bg-transparent ...',
       destructive: 'bg-destructive ...',
       outline: 'border bg-background ...',
       secondary: 'bg-secondary ...',

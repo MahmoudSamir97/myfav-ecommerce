@@ -14,15 +14,10 @@ export const AnnouncementBar = () => {
     <div className="bg-surface-soft py-2 px-5 text-announcement">
       <div className="md:justify-between justify-center gap-3 md:gap0 flex items-center">
         {/* 1. Left Spacer (Empty but takes up space) */}
-        <div className="flex-1 hidden md:block" />
+        <div className="flex-1 block" />
 
         {/* 2. Center Content (Centered within its flex-1 area) */}
-        <div
-          className={cn(
-            'flex items-center justify-center gap-2 md:gap-3'
-            // isRTL ? 'flex-row-reverse' : 'flex-row'
-          )}
-        >
+        <div className={cn('flex items-center justify-center gap-2 md:gap-3')}>
           <AnnouncementIcon className="shrink-0" />
           <p className="font-medium text-sm">{t('announcement.text')}</p>
           <LinkButton to="/shop" withArrow className="hidden md:flex shrink-0">
