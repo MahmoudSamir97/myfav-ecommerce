@@ -11,8 +11,8 @@ import {
 export const NavbarDesktop = () => {
   const { t } = useTranslation();
   return (
-    <NavigationMenu className="hidden md:flex">
-      <NavigationMenuList className="gap-8">
+    <NavigationMenu className="hidden md:flex ">
+      <NavigationMenuList className="gap-8 flex-row rtl:flex-row-reverse">
         {NAV_LINKS.map((link) => {
           return (
             <NavigationMenuItem key={link.id}>

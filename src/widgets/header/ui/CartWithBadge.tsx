@@ -11,10 +11,10 @@ export const CartWithBadge = () => {
       <span
         className="
           absolute -top-1 -right-1
-          min-w-4 h-4 px-1
+          min-w-5 h-5 px-1
           rounded-full
           bg-badge text-badge-foreground
-          text-[10px] font-medium
+          text-[12px] font-medium
           flex items-center justify-center
         "
         aria-label="Cart items: 2"

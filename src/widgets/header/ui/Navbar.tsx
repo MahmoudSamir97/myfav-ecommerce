@@ -24,11 +24,10 @@ export const Navbar = () => {
         <NavbarMobile />
         <Logo />
       </div>
-
       <NavbarDesktop />
+
       {/* Right side */}
       <div className="flex items-center gap-1">
-        {/* Desktop-only actions */}
         <div className="hidden md:flex items-center gap-1">
           <SearchButton />
           <AvatarIcon className="cursor-pointer" />
