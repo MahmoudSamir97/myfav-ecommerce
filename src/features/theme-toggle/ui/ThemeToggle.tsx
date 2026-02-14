@@ -10,7 +10,7 @@ export const ThemeToggle = () => {
   return (
     <AppTooltip content={t('themes.label')} side="bottom" align="center" sideOffset={4}>
       <Button className="cursor-pointer" onClick={toggle} size="icon" variant="nav">
-        {theme === 'light' ? <SunIcon className="h-5 w-5" /> : <MoonIcon className="h-5 w-5" />}
+        {theme === 'light' ? <MoonIcon className="h-5 w-5" /> : <SunIcon className="h-5 w-5" />}
         <span className="sr-only">{t('themes.label')}</span>
       </Button>
     </AppTooltip>

@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { SearchIcon } from '@/shared/assets';
 import { cn } from '@/shared/lib/utils';
 import { Button } from '@/shared/ui';
+import { t } from 'i18next';
 
 export const SearchButton = () => {
   const [open, setOpen] = useState(false);
@@ -57,7 +58,7 @@ export const SearchButton = () => {
           <input
             ref={inputRef}
             type="text"
-            placeholder="Search"
+            placeholder={t('placeholders.search')}
             className={cn(
               'h-9 w-64 rounded-md border bg-background',
               'ps-10 pe-2 text-sm',
