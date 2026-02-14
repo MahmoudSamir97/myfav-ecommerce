@@ -15,5 +15,8 @@
     "shop": "Shop",
     "products": "Products",
     "contactUs": "Contact Us"
+  },
+  "placeholders": {
+    "search": "Search"
   }
 }

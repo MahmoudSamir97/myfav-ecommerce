@@ -15,5 +15,8 @@
     "shop": "المتجر",
     "products": "المنتجات",
     "contactUs": "اتصل بنا"
+  },
+  "placeholders": {
+    "search": "بحث"
   }
 }
