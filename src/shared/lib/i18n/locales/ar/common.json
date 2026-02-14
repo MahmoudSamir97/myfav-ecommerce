@@ -9,5 +9,14 @@
   },
   "themes": {
     "label": "إختر نوع الثيم"
+  },
+  "navLinks": {
+    "home": "الرئيسية",
+    "shop": "المتجر",
+    "products": "المنتجات",
+    "contactUs": "اتصل بنا"
+  },
+  "placeholders": {
+    "search": "بحث"
   }
 }

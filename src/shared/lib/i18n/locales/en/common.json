@@ -9,5 +9,14 @@
   },
   "themes": {
     "label": "Toggle Mode"
+  },
+  "navLinks": {
+    "home": "Home",
+    "shop": "Shop",
+    "products": "Products",
+    "contactUs": "Contact Us"
+  },
+  "placeholders": {
+    "search": "Search"
   }
 }

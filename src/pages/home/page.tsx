@@ -1,3 +1,7 @@
 export default function HomePage() {
-  return <h1>Home</h1>;
+  return (
+    <div className="justify-center items-center p-5">
+      <h1>Home</h1>
+    </div>
+  );
 }

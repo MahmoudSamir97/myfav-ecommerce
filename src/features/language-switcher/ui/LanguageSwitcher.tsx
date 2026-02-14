@@ -1,4 +1,3 @@
-import { GlobeIcon } from 'lucide-react';
 import {
   Select,
   SelectContent,
@@ -8,6 +7,7 @@ import {
 } from '@/shared/ui/shadcn/select';
 import { cn } from '@/shared/lib/utils';
 import type { Language } from '../model/types';
+import { LanguageIcon } from '@/shared/assets';
 
 interface LanguageSwitcherProps {
   languages: Language[];
@@ -21,12 +21,12 @@ export const LanguageSwitcher = ({ languages, value, onChange }: LanguageSwitche
       <SelectTrigger
         aria-label="Select language"
         className={cn(
-          'h-8 w-18 gap-1 px-2',
+          'h-8  gap-2 px-2 font-medium',
           'border-none shadow-none cursor-pointer',
-          'hover:bg-accent hover:text-accent-foreground'
+          'hover:text-accent-foreground'
         )}
       >
-        <GlobeIcon size={16} aria-hidden />
+        <LanguageIcon className="h-5 w-5" aria-hidden />
         <SelectValue />
       </SelectTrigger>
 
